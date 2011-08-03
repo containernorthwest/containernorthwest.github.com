@@ -1,0 +1,12 @@
+name: "Containers Northwest"
+destination: ./_site
+auto:        true
+lsi:         false
+server_port: 4000
+markdown:    maruku
+exclude: Gemfile,Gemfile.lock,config.rb,README.mkd
+maruku:
+  use_tex:    false
+  use_divs:   false
+  png_dir:    images/latex
+  png_url:    /images/latex

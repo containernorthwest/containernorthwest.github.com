@@ -1,0 +1,102 @@
+@mixin container
+  text-align: left
+  width: 982px
+  margin: 0 auto
+
+// Layout Styles
+body
+  text-align: center
+  padding: 0
+  margin: 0
+  background: #0C0B0C url(../images/bg/body_bg.jpg) center 85px repeat-x
+#header
+  height: 85px
+  background: #1C1C1C
+  #header_inner
+    @include container
+    position: relative
+    #navigation
+      position: absolute
+      top: 72px
+      left: 0px
+      text-align: left
+      a
+        background: url(../images/bg/link_bg.png) center top no-repeat
+        display: block
+        float: left
+        width: 152px
+        margin: 0 -2px
+        height: 14px
+        line-height: 15px
+        text:
+          transform: uppercase
+          decoration: none
+          align: center
+        color: #fff
+        font:
+          size: 11px
+          family: "Century Gothic", sans-serif
+          weight: bold
+        &.current
+          height: 17px
+          line-height: 20px
+#header_image
+  margin-top: 21px
+  border-bottom: 2px solid #9E9E9E
+#page
+  @include container
+  border:
+    left: 13px solid #312F30
+    right: 13px solid #312F30
+  #page_inner
+    margin: 0
+    padding: 0
+    overflow: hidden
+    #content
+      #content_inner
+        padding: 10px
+        min-height: 350px
+#footer
+  background: #fff url(../images/bg/footer_bg.jpg) top left repeat-x
+  overflow: hidden
+  #feed_block
+    @include container
+    height: 36px
+    #feed_block_inner
+      text-align: left
+      padding-left: 13px
+  #copyright
+    @include container
+    padding: 23px 0
+    text-align: center
+    line-height: 1.5em
+    position: relative
+    #copyrighter
+      position: absolute
+      right: 13px
+      text:
+        transform: uppercase
+        decoration: none
+      font:
+        weight: bold
+
+// Typo Styles
+body
+  color: #fff
+  font:
+    size: 75%
+    family: Arial, sans-serif
+  h1, h2, h3, h4, h5
+    font:
+      family: "Century Gothic", sans-serif
+      weight: normal
+    margin: 0 0 .25em 0
+  h1, h2
+    font:
+      size: 28px
+  p
+    margin: 0 0 1em 0
+  a
+    color: #fff
+    img
+      border: none

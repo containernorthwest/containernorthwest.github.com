@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.name }}</title>
+<meta name="title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.name }}" />
+{% if page.content and page.truncatewords  %}
+<meta name="description" content="{{ page.content | strip_html | truncatewords:page.truncatewords }}" />
+{% elsif page.description  %}
+<meta name="description" content="{{ page.description }}" />
+{% endif %}
+<meta name="robots" content="index, follow" />
+<meta name="language" content="en" />
+
+<link href="/stylesheets/screen.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 7]>
+<link href="/stylesheets/ie.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<link rel="shortcut icon" href="/favicon.ico" />
+
+</head>
+<body>
+  {{ site.navigation }}
+    <div id="header">
+      <div id="header_inner">
+        <a href="/" id="logo"><img src="/images/logo.jpg" alt="{{ site.name }}"/></a>
+        <div id="navigation">
+          {% include navigation.html %}
+        </div>
+      </div>
+    </div>
+    <div id="header_image">
+      <img src="/images/header_image.jpg" alt="" />
+    </div>
+    <div id="page">
+      <div id="page_inner">
+        <div id="content">
+          <div id="content_inner">
+            {{ content }}
+            {% if page.title == 'Gallery' %}
+                {% include gallery.html %}
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div id="footer_inner">
+        <div id="copyright">
+          <div id="copyright_inner">
+            &copy; {{ site.name }} - All Rights Reserved
+            <a href="http://www.allianceservicesonline.com/" target="_blank" id="copyrighter">Alliance</a>
+          </div>
+        </div>
+        <div id="feed_block">
+          <div id="feed_block_inner">
+            <!-- <img src="/images/twitter_icon.jpg" alt="twitter" />
+            <img src="/images/facebook_icon.jpg" alt="facebook" /> -->
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
