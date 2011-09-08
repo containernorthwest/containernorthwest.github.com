@@ -14,4 +14,4 @@ We eliminate the hassle from international shipping by offering freight packing 
 
 With a career spanning nearly 40 years, Containers Northwest founder Carl Marrs is a mechanical expert. His field has taken him across the map, from the Gulf of Mexico to the Bering Sea—repairing and reassembling Caterpillar equipment, diving-support vessels, fishing-trawler engines, and a variety of industrial machinery. For over a decade he served as the master mechanic at Ritchie Brothers, the largest worldwide auctioneer for used heavy equipment. Carl’s vast experience and dedication guarantee the professional handling and safety and of every shipment.
 
-Have a big shipping project? [Contact us today!](contact_us.html)
+Have a big shipping project? [Contact us today!](contact_us.html) :)
