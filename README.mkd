@@ -1,13 +1,11 @@
 
 ## Development environment
 
-_Preferably to use with [RVM][]._
-
 Inside project folder throw the following commands:
 
  * `bundle install`
- * `compass watch`
- * `jekyll --server #in another terminal`
+ * `bundle exec compass watch`
+ * `bundle exec jekyll --server #in another terminal`
 
 ## License
 
@@ -16,4 +14,3 @@ Reference/backlink to the [source][] a must ;)
 
 [Creative Commons Attribution-NoDerivs 3.0 Unported License]: http://creativecommons.org/licenses/by-nd/3.0/
 [source]: http://containernorthwest.com
-[RVM]: https://rvm.beginrescueend.com/
