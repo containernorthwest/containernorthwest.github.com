@@ -4,7 +4,7 @@ auto:        true
 lsi:         false
 server_port: 4000
 markdown:    maruku
-exclude: Gemfile,Gemfile.lock,config.rb,README.mkd
+exclude: Gemfile,Gemfile.lock,config.rb,README.mkd,Rakefile
 maruku:
   use_tex:    false
   use_divs:   false
